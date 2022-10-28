@@ -11,6 +11,9 @@
 		AA890821290C327000DB8640 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA890820290C327000DB8640 /* ContentView.swift */; };
 		AA890823290C327100DB8640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA890822290C327100DB8640 /* Assets.xcassets */; };
 		AA890826290C327100DB8640 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA890825290C327100DB8640 /* Preview Assets.xcassets */; };
+		AA89082E290C32B700DB8640 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA89082D290C32B700DB8640 /* ContentViewModel.swift */; };
+		AA890830290C32C400DB8640 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA89082F290C32C400DB8640 /* VideoView.swift */; };
+		AA890832290C33CA00DB8640 /* IMG_2483.MOV in Resources */ = {isa = PBXBuildFile; fileRef = AA890831290C33CA00DB8640 /* IMG_2483.MOV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		AA890820290C327000DB8640 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AA890822290C327100DB8640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA890825290C327100DB8640 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA89082D290C32B700DB8640 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		AA89082F290C32C400DB8640 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		AA890831290C33CA00DB8640 /* IMG_2483.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_2483.MOV; sourceTree = "<group>"; };
+		AA890833290C37A300DB8640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +58,11 @@
 		AA89081D290C327000DB8640 /* VideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				AA890833290C37A300DB8640 /* Info.plist */,
 				AA89081E290C327000DB8640 /* VideoPlayerApp.swift */,
-				AA890820290C327000DB8640 /* ContentView.swift */,
 				AA890822290C327100DB8640 /* Assets.xcassets */,
+				AA890831290C33CA00DB8640 /* IMG_2483.MOV */,
+				AA89082C290C329B00DB8640 /* MVVM */,
 				AA890824290C327100DB8640 /* Preview Content */,
 			);
 			path = VideoPlayer;
@@ -65,6 +74,16 @@
 				AA890825290C327100DB8640 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA89082C290C329B00DB8640 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				AA890820290C327000DB8640 /* ContentView.swift */,
+				AA89082D290C32B700DB8640 /* ContentViewModel.swift */,
+				AA89082F290C32C400DB8640 /* VideoView.swift */,
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA890826290C327100DB8640 /* Preview Assets.xcassets in Resources */,
+				AA890832290C33CA00DB8640 /* IMG_2483.MOV in Resources */,
 				AA890823290C327100DB8640 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA890830290C32C400DB8640 /* VideoView.swift in Sources */,
 				AA890821290C327000DB8640 /* ContentView.swift in Sources */,
 				AA89081F290C327000DB8640 /* VideoPlayerApp.swift in Sources */,
+				AA89082E290C32B700DB8640 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +292,7 @@
 				DEVELOPMENT_TEAM = 9TPTHP2V2G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VideoPlayer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +322,7 @@
 				DEVELOPMENT_TEAM = 9TPTHP2V2G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VideoPlayer/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
